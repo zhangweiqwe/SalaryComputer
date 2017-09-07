@@ -51,7 +51,6 @@ public class SpinnerCategoryAdapter extends BaseAdapter implements SpinnerAdapte
         text.setPadding(dp2px(16,context),dp2px(8,context),dp2px(16,context), 0);
         text.setMaxLines(1);
         text.setEllipsize(TextUtils.TruncateAt.END);
-        //text.setMovementMethod(ScrollingMovementMethod.getInstance());
         constraintLayout.addView(text);
 
 
