@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         spinnerCategory0.add("年终奖所得");
         spinnerCategory0.add("劳务报酬所得");
         spinnerCategory0.add("个体工商户生产、经营所得");
-        spinnerCategory0.add("对企事业单位的承包、承租经营所得承租经营所得承租经营所得");
+        spinnerCategory0.add("对企事业单位的承包、承租经营所得");
         spinnerCategory0.add("稿酬所得");
         spinnerCategory0.add("特许权使用费所得");
         spinnerCategory0.add("财产租赁所得");
