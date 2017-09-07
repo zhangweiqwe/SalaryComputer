@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="16dp"
+    tools:context="cn.wsgwz.salarycomputer.MainActivity">
+
+    <ScrollView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_00"
+                android:text="收入类型"
+                android:gravity="end"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_weight="6"
+                android:layout_width="0dp"
+                android:gravity="bottom"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/s_00"
+                    android:gravity="bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tv_01"
+                android:text="税前工资"
+                android:gravity="end"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_00"
+                android:maxLines="1"
+                android:inputType="number"
+                android:layout_weight="6"
+                android:gravity="start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tv_02"
+                android:text="各项社会保险费"
+                android:gravity="end"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_01"
+                android:maxLines="1"
+                android:inputType="number"
+                android:layout_weight="6"
+                android:gravity="start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp">
+            <TextView
+                android:id="@+id/tv_03"
+                android:text="起征点"
+                android:gravity="end"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_weight="6"
+                android:layout_width="0dp"
+                android:gravity="bottom"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/s_01"
+                    android:gravity="bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_weight="6"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content">
+              <Button
+                  android:id="@+id/b_00"
+                  android:text="计算"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <Button
+                  android:id="@+id/b_01"
+                  android:text="重置"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+          </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_04"
+            android:layout_marginTop="13dp"
+            android:hint="暂无结果"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
